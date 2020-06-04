@@ -8,6 +8,7 @@ RUN apt-get autoclean
 RUN apt-get autoremove
 RUN npm install
 RUN npm run build --prod
+RUN docker build -t angular-pipeline .
 
 FROM nginx:stable-alpine
 COPY dist/angular-pipeline /usr/share/nginx/html
