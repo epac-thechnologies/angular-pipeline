@@ -1,3 +1,4 @@
+#!/bin/bash
 export PATH=/sbin:/usr/sbin:/usr/bin:/usr/local/bin
 pwd
 npm cache clean --force
